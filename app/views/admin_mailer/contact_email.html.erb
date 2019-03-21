@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h1>Bonjour Maître, Vous avez un nouveau contact.</h1>
+  <h3>Ce contact a été enregistré dans la base de données.</h3>
+  <p>
+    Voici les infos détaillées :<br>
+    <ul>
+      <li>Prénom : <%= @contact.first_name %></li>
+      <li>Nom : <%= @contact.last_name %></li>
+      <li>Entreprise : <%= @contact.company %></li>
+      <li>Email : <%= @contact.email %></li>
+      <li>Objet : <%= @contact.subject %></li>
+      <li>Message : <%= @contact.message %></li>
+    </ul>
+  </p>
+  <p>
+    À très bientôt, Beau gosse :)
+  </p>
+</body>
+</html>
