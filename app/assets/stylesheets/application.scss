@@ -14,5 +14,29 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import 'font-awesome';
+
 @import "contacts";
 @import "static_pages";
+
+:root {
+	--m-orange: #fe8e00;
+	--m-light-green: #14b095;
+	--m-dark-green: #055046;
+	--m-light-blue: #0990d4;
+	--m-dark-blue: #133d78;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: font-url('AvenirLTStd-Medium.otf');
+}
+@font-face {
+	font-family: "Moon";
+	src: font-url('Moon2.0-Regular.otf');
+}
+
+body {
+	font-family: "Avenir";
+}
