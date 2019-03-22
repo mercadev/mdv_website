@@ -12,31 +12,97 @@
  *
  */
 
-// Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "bootstrap";
-@import "font-awesome-sprockets";
-@import 'font-awesome';
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+ @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import 'font-awesome';
 
-@import "contacts";
-@import "static_pages";
+ @import "contacts";
+ @import "static_pages";
 
-:root {
-	--m-orange: #fe8e00;
-	--m-light-green: #14b095;
-	--m-dark-green: #055046;
-	--m-light-blue: #0990d4;
-	--m-dark-blue: #133d78;
-}
+ :root {
+ 	--m-orange: #fe8e00;
+ 	--m-light-green: #14b095;
+ 	--m-dark-green: #055046;
+ 	--m-light-blue: #0990d4;
+ 	--m-dark-blue: #133d78;
+ }
 
-@font-face {
-	font-family: "Avenir";
-	src: font-url('AvenirLTStd-Medium.otf');
-}
-@font-face {
-	font-family: "Moon";
-	src: font-url('Moon2.0-Regular.otf');
-}
+ @font-face {
+ 	font-family: "Avenir";
+ 	src: font-url('AvenirLTStd-Medium.otf');
+ }
+ @font-face {
+ 	font-family: "Moon";
+ 	src: font-url('Moon2.0-Regular.otf');
+ }
 
-body {
-	font-family: "Avenir";
-}
+ body {
+ 	font-family: "Avenir";
+ }
+
+ #company_logo {
+ 	width: 155px;
+    height: 50px;
+ }
+
+ .navbar-fixed-top.scrolled {
+ 	background-color: #f9f9f9;
+ 	transition: background-color 200ms linear;
+ }
+
+ .navbar-brand{
+ 	margin-bottom: 1%;
+ }
+
+ .nav-container{
+ 	border-bottom:  2px solid rgba(249, 249, 249, .3);
+ 	display: flex;
+ 	align-content: space-between;
+ 	width: 100%;
+ 	margin-right: 10%;
+ 	margin-left: 10%;
+ }
+
+ .footer-bar{
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+ 	align-items: center;
+ 	border-bottom: 2px solid var(--m-light-green);
+ 	border-top:2px solid var(--m-light-green);
+ 	color: var(--m-light-green);
+ 	height: auto;
+ 	padding-bottom: 0.4rem;
+ 	padding-top: 0.4rem;
+ 	padding-left: 3%;
+ 	padding-right: 3%;
+ }
+
+ .logo-footer-content{
+ 	margin-left: 3%;
+ 	padding: 0;
+ }
+
+ hr {
+ 	border-top: 2px solid var(--m-orange);
+ }
+
+ #contact-job{
+ 	margin-bottom: 2px;
+ }
+
+ hr-job {
+ 	border-top: 1px solid var(--m-orange);
+ 	height: 0.5rem;
+ 	margin-bottom: 0.5rem;
+ }
+
+ #infos-contact{
+ 	height: 40px;
+ }
+
+ #contact-mail{
+ 	color: var(--m-orange);
+ 	text-decoration: underline;
+ }
