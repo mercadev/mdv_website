@@ -18,6 +18,25 @@
 	margin-right: auto;
 }
 
+
+.btn-primary {
+	background-color:var(--m-light-green);
+	border-color: var(--m-light-green);
+}
+
+.btn-primary:hover {
+	background-color:var(--m-orange);
+	border-color: var(--m-orange);
+}
+
+.btn-primary:focus {
+	background-color:var(--m-orange);
+	border-color: var(--m-orange);
+}
+#send_btn:active {
+	background-color:var(--m-orange);
+	border-color: var(--m-orange);}
+
 #map{
 	margin-top: 4%;
 	margin-bottom: 4%;
