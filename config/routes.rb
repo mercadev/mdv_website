@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'mentions-legales', to: 'static_pages#legal_notice', as: 'legal_notice'
   get 'politique-de-confidentialite', to: 'static_pages#privacy_policy', as: 'privacy_policy'
 
-  get 'contact', to: 'contacts#new'
-  post 'contacts/create', to: 'contacts#create'
+  get 'contact', to: 'contacts#new', as: 'new_contact'
+  post 'contact', to: 'contacts#create', as: 'create_contact'
+  get 'contacts/:id', to: 'contacts#show'
+
+  resources :contacts
 end
