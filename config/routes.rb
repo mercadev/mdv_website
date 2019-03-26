@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'politique-de-confidentialite', to: 'static_pages#privacy_policy', as: 'privacy_policy'
 
   get 'contact', to: 'contacts#new'
+  post 'contacts/create', to: 'contacts#create'
 end

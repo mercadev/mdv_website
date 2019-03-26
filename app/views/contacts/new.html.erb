@@ -25,44 +25,45 @@
 		<p><center id="contact-mail">contact@mercadev.fr</p>
 		</div>
 		<!-- Contact Form -->
-		<form>
-			<div class="form-row">
-				<div class="col">
-					<input type="text" class="form-control" placeholder="Prénom">
-				</div>
-				<div class="col">
-					<input type="text" class="form-control" placeholder="Nom">
-				</div>
-				<div class="col">
-					<input type="text" class="form-control" placeholder="Société">
-				</div>
-			</div> 
-		</form>
+		<form action=<%= contacts_create_path %> method="POST">
+			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-		<!-- e-mail -->
-		<form>
 			<div class="form-row">
 				<div class="col">
-					<input type="text" class="form-control" id="InputMail" placeholder="Adresse e-mail">
+					<input type="text" class="form-control" placeholder="Prénom" name="first_name">
+				</div>
+				<div class="col">
+					<input type="text" class="form-control" placeholder="Nom" name="last_name">
+				</div>
+				<div class="col">
+					<input type="text" class="form-control" placeholder="Société" name="company">
 				</div>
 			</div>
-		</form>
 
-		<!-- Object -->
-		<form>
+			<!-- E-mail -->
 			<div class="form-row">
 				<div class="col">
-					<input type="text" class="form-control" id="InputObject" placeholder="Objet">
+					<input type="text" class="form-control" id="InputMail" placeholder="Adresse e-mail" name="email">
 				</div>
 			</div>
-		</form>
 
-		<!-- Message -->
-		<form>
+			<!-- Subject -->
 			<div class="form-row">
 				<div class="col">
-					<textarea class="form-control"  id="InputMessage" placeholder="Message" cols="150" rows="5" ></textarea>
+					<input type="text" class="form-control" id="InputObject" placeholder="Objet" name="subject">
 				</div>
+			</div>
+
+			<!-- Message -->
+			<div class="form-row">
+				<div class="col">
+					<textarea class="form-control"  id="InputMessage" placeholder="Message" cols="150" rows="5" name="message"></textarea>
+				</div>
+			</div>
+
+			<!-- Submit button -->
+			<div class="btn-form-row">
+				<%= button_tag "Envoyer", class: "btn btn-primary btn-lg btn-block" %>
 			</div>
 		</form> 
 
@@ -73,11 +74,6 @@
 <input type="checkbox" class="form-check-input" id="marketingCheck1">
 <label class="form-check-label" for="marketingCheck1">J'accepte de recevoir des e-mails marketing de la part de Mercadev.</label>
 </div></div></form> -->
-
-<!-- Submit button -->
-<div class="btn-form-row">
-	<button type="button" class="btn btn-primary btn-lg btn-block">Envoyer</button>
-</div>
 
 <!-- Map -->
 <div id="map">
