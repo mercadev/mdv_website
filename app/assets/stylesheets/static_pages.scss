@@ -20,20 +20,6 @@ a:hover, a:focus{
 	color: var(--m-orange);
 }
 
-.btn-primary {
-	background-color:var(--m-light-green);
-	border-color: var(--m-light-green);
-}
-
-.btn-primary:hover {
-	background-color:var(--m-orange);
-	border-color: var(--m-orange);
-}
-
-.btn-primary:focus {
-	background-color:var(--m-orange);
-	border-color: var(--m-orange);
-}
 
 .carousel-item {
 	height: 80vh;
@@ -264,6 +250,10 @@ a:hover, a:focus{
 #btn-agency-contact:hover, #btn-agency-contact:focus {
 	background-color: #fff;
 	color:var(--m-light-green);
+}
+
+#btn-agency-contact:active{
+box-shadow: none;
 }
 
 /*Team card*/

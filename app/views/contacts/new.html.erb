@@ -27,7 +27,6 @@
 		<!-- Contact Form -->
 		<form action=<%= contacts_create_path %> method="POST">
 			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-
 			<div class="form-row">
 				<div class="col">
 					<input type="text" class="form-control" placeholder="Prénom" name="first_name">
@@ -54,7 +53,7 @@
 				</div>
 			</div>
 
-			<!-- Message -->
+		<!-- Message -->
 			<div class="form-row">
 				<div class="col">
 					<textarea class="form-control"  id="InputMessage" placeholder="Message" cols="150" rows="5" name="message"></textarea>
@@ -63,7 +62,7 @@
 
 			<!-- Submit button -->
 			<div class="btn-form-row">
-				<%= button_tag "Envoyer", class: "btn btn-primary btn-lg btn-block" %>
+				<%= button_tag "Envoyer", class: "btn btn-primary btn-lg btn-block"  id: "send_btn" %>
 			</div>
 		</form> 
 
