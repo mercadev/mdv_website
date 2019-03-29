@@ -9,7 +9,5 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'contacts#new', as: 'new_contact'
   post 'contact', to: 'contacts#create', as: 'create_contact'
-  get 'contacts/:id', to: 'contacts#show'
-
-  resources :contacts
+  get 'contacts/:id', to: 'contacts#show', as: 'contact'
 end
