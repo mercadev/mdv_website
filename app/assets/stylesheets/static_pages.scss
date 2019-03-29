@@ -22,7 +22,7 @@ a:hover, a:focus{
 
 
 .carousel-item {
-	height: 80vh;
+	height: 75vh;
 	min-height: 350px;
 	background: no-repeat center center scroll;
 	-webkit-background-size: cover;
@@ -36,31 +36,44 @@ a:hover, a:focus{
 
 .display-4{
 	text-transform: uppercase;
-	font-size: 65px;
+	font-size: 4rem;
 }
 
 #mercadev {
 	font-family: Moon;
-	font-size: 70px;
+	font-size: 6rem;
 	font-weight: bold;
-	letter-spacing: 10px;
+	letter-spacing: 0.7rem;
 }
 
 .lead{ 
-	font-size: 22px;
+	font-size: 1.5rem;
 }
 
 .carousel-caption {
 	position: absolute;
-	/*    right: 15%;*/
-	bottom: 30%;
+	bottom: 25%;
 	left: 15%;
 	z-index: 10;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: #fff;
 	text-align: center;
+	max-width: 95%;
+}
 
+@media screen and (max-width: 1440px) {
+ #mercadev{
+ 	font-size: 1.8rem;
+ 	letter-spacing: 0.17rem;
+ }
+
+.lead{
+ 	font-size: 1rem;
+ }
+.display-4{
+	font-size: 1.5rem;
+}
 }
 
 #item-3 {
