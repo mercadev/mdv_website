@@ -105,6 +105,7 @@ a:hover, a:focus{
 border: solid 2px var(--m-orange);
 text-decoration: none;
 }
+
 #logo-bar-footer{
 	height: auto;
 	color: #14b09F;
@@ -360,7 +361,11 @@ box-shadow: none;
 
 #logo-card{
 	color: var(--m-orange);
+<<<<<<< HEAD
 }
+
 #contact_table, #scraping_progress {
 	margin-top: 120px;
+=======
+>>>>>>> 6df52ef08df775c6911b9955c8d69f060717d97c
 }

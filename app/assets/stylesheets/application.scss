@@ -64,6 +64,15 @@
  	margin-left: 10%;
  }
 
+.dropdown-item:hover{
+border-bottom: solid 2px var(--m-orange);
+ }
+
+.dropdown-item:active{
+ background: none;
+ color:black;
+ }
+
  .footer-bar{
  	display: flex;
  	flex-direction: row;

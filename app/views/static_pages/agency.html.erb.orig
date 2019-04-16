@@ -21,8 +21,13 @@
 <!-- text content -->
 <div id="intro-text">
 Située à Bordeaux, en Aquitaine, Mercadev est une agence web et de marketing digital.<br>
+<<<<<<< HEAD
 Axés sur les TPE, PME, artisans, commerçants, professions libérales, nous mettons en œuvre des solutions de marketing digital adaptées à votre activité et à vos besoins : site internet, charte graphique, logo, stratégie digitale...<br>
 Nous travaillons sur le webdesign, le référencement, le marketing digital, et la communication via les réseaux sociaux.
+=======
+Axée sur les TPE, PME, artisans, commerçants, professions libérales, nous mettons en œuvre des solutions de marketing digital adaptées à votre activité et à vos besoins : site internet, charte graphique, logo, stratégie digitale...<br>
+Mercadev travaille le webdesign, le référencement, le marketing digital ainsi que la communication sur les réseaux sociaux ayant pour finalité d'obtenir toujours plus pour une expérience utilisateur unique.
+>>>>>>> 6df52ef08df775c6911b9955c8d69f060717d97c
 <!-- 		          <a class="btn btn-primary" href="<%= new_contact_path %>">Nous contacter</a> -->
 </div>
 
@@ -46,6 +51,7 @@ Proches de nos clients, nous mettons tout en oeuvre afin de satisfaire vos deman
 <div id="title-card"> <center> <h3 id="digital-title">Maîtrise du digital</h3></center><div>
 <p class="card-text">
 Dernières innovations en matière de création de site internet, stratégie digitale, design, visibilité sur le web référencement, laissez notre équipe prendre en charge votre image dans un monde numérique en constante transformation.</p>
+
 </div> </div> </div>
 </div>
 </div>
