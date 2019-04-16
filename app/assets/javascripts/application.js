@@ -25,4 +25,9 @@ $(function () {
 		var $nav = $(".navbar-fixed-top");
 		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
+
+	$('#check_all').on("change", function() {
+		var checkboxes = $('.contact-checkbox');
+		checkboxes.prop("checked", this.checked);
+	});
 });

@@ -19,9 +19,14 @@ ActiveRecord::Schema.define(version: 2019_03_20_202318) do
     t.string "first_name"
     t.string "last_name"
     t.string "company"
+    t.string "activity"
+    t.string "profession"
     t.string "email"
-    t.string "subject"
-    t.text "message"
+    t.string "mobile_phone"
+    t.string "fixed_phone"
+    t.text "address"
+    t.string "website"
+    t.string "source"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

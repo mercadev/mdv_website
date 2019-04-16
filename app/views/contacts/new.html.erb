@@ -38,46 +38,45 @@
 		<% end %>
 
 		<!-- Contact Form -->
-		<form action=<%= create_contact_path %> method="POST">
-			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<%= form_for @contact, url: {action: "create"} do |f| %>
 			<div class="form-row">
 				<div class="col">
-					<input type="text" class="form-control" placeholder="Prénom" name="first_name">
+					<%= f.text_field :first_name, class: "form-control", placeholder: "Prénom" %>
 				</div>
 				<div class="col">
-					<input type="text" class="form-control" placeholder="Nom" name="last_name">
+					<%= f.text_field :last_name, class: "form-control", placeholder: "Nom" %>
 				</div>
 				<div class="col">
-					<input type="text" class="form-control" placeholder="Société" name="company">
+					<%= f.text_field :company, class: "form-control", placeholder: "Société" %>
 				</div>
 			</div>
 
 			<!-- E-mail -->
 			<div class="form-row">
 				<div class="col">
-					<input type="text" class="form-control" id="InputMail" placeholder="Adresse e-mail" name="email">
+					<%= f.text_field :email, class: "form-control", placeholder: "Adresse e-mail" %>
 				</div>
 			</div>
 
 			<!-- Subject -->
 			<div class="form-row">
 				<div class="col">
-					<input type="text" class="form-control" id="InputObject" placeholder="Objet" name="subject">
+					<%= f.text_field :subject, class: "form-control", placeholder: "Sujet" %>
 				</div>
 			</div>
 
 			<!-- Message -->
 			<div class="form-row">
 				<div class="col">
-					<textarea class="form-control"  id="InputMessage" placeholder="Message" cols="150" rows="5" name="message"></textarea>
+					<%= f.text_area :message, class: "form-control", placeholder: "Message", size:"150x5" %>
 				</div>
 			</div>
 
 			<!-- Submit button -->
 			<div class="btn-form-row">
-				<%= button_tag "Envoyer", class: "btn btn-primary btn-lg btn-block", id: "send_btn" %>
+				<%= f.submit "Envoyer", class: "btn btn-primary btn-lg btn-block", id: "send_btn" %>
 			</div>
-		</form> 
+		<% end %>
 
 		<!-- Marketing autorization -->
 <!-- <form>

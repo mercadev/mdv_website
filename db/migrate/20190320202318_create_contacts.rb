@@ -4,9 +4,14 @@ class CreateContacts < ActiveRecord::Migration[5.2]
       t.string :first_name
       t.string :last_name
       t.string :company
+      t.string :activity
+      t.string :profession
       t.string :email
-      t.string :subject
-      t.text :message
+      t.string :mobile_phone
+      t.string :fixed_phone
+      t.text :address
+      t.string :website
+      t.string :source
 
       t.timestamps
     end
