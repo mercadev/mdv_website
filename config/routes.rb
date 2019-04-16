@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   get 'services', to: 'static_pages#services'
   get 'mentions-legales', to: 'static_pages#legal_notice', as: 'legal_notice'
   get 'politique-de-confidentialite', to: 'static_pages#privacy_policy', as: 'privacy_policy'
+  get 'site-sur-mesure', to: 'static_pages#custom_website', as: 'custom_website'
+  get 'site-pre-construit', to: 'static_pages#prebuilt_website', as: 'prebuilt_website'
+  get 'marketing-digital', to: 'static_pages#digital_marketing', as: 'digital_marketing'
+  get 'referencement-seo', to: 'static_pages#seo', as: 'seo'
+  get 'bornes-tactile', to: 'static_pages#touch_terminal', as: 'touch_terminal'
 
   get 'contact', to: 'contacts#new', as: 'new_contact'
   post 'contact', to: 'contacts#create', as: 'create_contact'

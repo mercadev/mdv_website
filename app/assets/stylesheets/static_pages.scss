@@ -101,6 +101,11 @@ a:hover, a:focus{
 	margin-bottom: 0;
 }
 
+#a-card:hover{
+border: solid 2px var(--m-orange);
+text-decoration: none;
+}
+
 #logo-bar-footer{
 	height: auto;
 	color: #14b09F;

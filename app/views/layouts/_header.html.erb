@@ -16,8 +16,28 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="<%= agency_path %>">L'agence</a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="<%= services_path %>">Services</a>
+
+					      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sites web
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="<%= prebuilt_website_path %>">Site web pré construit</a>
+          <a class="dropdown-item" href="<%= custom_website_path %>">Site web sur mesure</a>
+      </div>
+  </li>
+
+  <li class="nav-item dropdown active">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Marketing
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="<%= digital_marketing_path %>">Marketing digital</a>
+          <a class="dropdown-item" href="<%= seo_path %>">Référencement Google</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+						<a class="nav-link" href="<%= touch_terminal_path %>">Bornes tactile</a>
 					</li>
 					<li class="nav-item active">
 						<a class="nav-link" href="<%= new_contact_path %>">Contact</a>
