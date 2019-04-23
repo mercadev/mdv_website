@@ -101,6 +101,10 @@ a:hover, a:focus{
 	margin-bottom: 0;
 }
 
+#a-card{
+border: solid 2px transparent;
+}
+
 #a-card:hover{
 border: solid 2px var(--m-orange);
 text-decoration: none;
