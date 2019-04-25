@@ -11,6 +11,9 @@ class UserContact < Contact
   validates :message, presence: { message: "Vous n'avez saisi aucun message." }
 
   def send_email
-    AdminMailer.user_contact_email(self).deliver_now
+    response = AdminMailer.user_contact_email(self).deliver_now
+    puts "TEST MAIL REPONSE :"
+    p response
+    puts "END OF TEST"
   end
 end
