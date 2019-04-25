@@ -41,6 +41,37 @@
  	font-family: "Avenir";
  }
 
+
+
+
+@media screen and (max-width: 900px) {
+ .nav-container{
+ 	 flex-direction: column;
+ 	 justify-content: center;
+ }
+
+ .navbar-brand{
+ margin-left: auto;
+ margin-right: auto;
+ }
+
+ .navbar-toggler, .nav-link{
+ background: rgba(249, 249, 249, 0.6);
+ border-bottom: solid 2px transparent;
+ align-items:center;
+ text-align: center;
+ }
+ .navbar-toggler, .nav-link:hover{
+border-bottom: solid 2px var(--m-orange);
+background: rgba(249, 249, 249, 1)
+ }
+
+.navbar-light .navbar-toggler {
+border-color: #f9f9f9;
+background-color: #f9f9f9;
+}
+}
+
  #company_logo {
  	width: 155px;
     height: 50px;
@@ -64,8 +95,13 @@
  	margin-left: 10%;
  }
 
+.dropdown-item{
+border-bottom: solid 2px transparent;
+ }
+
 .dropdown-item:hover{
 border-bottom: solid 2px var(--m-orange);
+background: rgba(254, 142, 0, 0.1)
  }
 
 .dropdown-item:active{
