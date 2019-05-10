@@ -1,0 +1,2 @@
+class MailingLogsController < ApplicationController
+end

@@ -1,4 +1,5 @@
 class Contact < ApplicationRecord
+  has_one :mailing_log
   # after_create :send_email
 
   # validates :first_name, presence: { message: "Vous n'avez saisi aucun prénom." }
