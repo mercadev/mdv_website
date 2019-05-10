@@ -9,7 +9,7 @@
 scraper = Scrapers::ScraperDeba.new
 scraper.start
 
-Contact.where(source: "scraping_deba").destroy_all
+# Contact.where(source: "scraping_deba").destroy_all
 
 puts "\nSaving items..."
 scraper.data.each.with_index(1) do |item, i|

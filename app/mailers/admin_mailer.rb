@@ -14,4 +14,12 @@ class AdminMailer < ApplicationMailer
     # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire(s) et sujet.
     mail(to: RECEIVERS, subject: 'Nouveau contact sur mercadev.fr')
   end
+
+  def prospect_email(prospect)
+    # on récupère l'instance contact pour ensuite pouvoir la passer à la view
+    @contact = prospect
+
+    # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire(s) et sujet.
+    mail(to: RECEIVERS, subject: 'Nouveau contact sur mercadev.fr')
+  end
 end

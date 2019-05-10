@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'scrapings/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#home'
   get 'accueil', to: 'static_pages#home', as: 'home'
@@ -19,4 +20,10 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :contacts, only: [:index]
   end
+
+  resources :scrapings, only: [:index]
+
+  post 'admin/contacts/send_prospect_emails', to: 'admin/contacts#send_prospect_emails', as: 'send_prospect_emails'
+  get 'admin/contacts/send_prospect_emails', to: 'admin/contacts#send_prospect_emails', as: 'prospect_emails_sent'
+  # get 'admin/contacts/prospect_emails_sent', to: 'admin/contacts#prospect_emails_sent', as: 'prospect_emails_sent'
 end

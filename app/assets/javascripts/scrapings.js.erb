@@ -1,0 +1,14 @@
+
+$(function () {
+	var x = 0;
+	
+	console.log($('h1'));
+	$('.scraping-progress').each(function(index,element) {
+		setInterval( function() {
+			console.log(element);
+			progress = <%= Contact.where(source: "scraping_deba").size %>
+			console.log(progress);
+			element.textContent = progress + '%';
+		}, 1000);
+	});
+});

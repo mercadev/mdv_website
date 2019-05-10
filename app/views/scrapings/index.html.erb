@@ -1,0 +1,22 @@
+<!-- Page Content -->
+<div class="container">
+
+	<!-- Page Heading -->
+	<h1 class="my-4">Page Heading
+		<small>Secondary Text</small>
+	</h1>
+
+	<% @scrapings.each do |s| %>
+	
+	<%= render partial: "/scrapings/card", locals: {s: s} %>
+
+	<% end %>
+
+
+
+</div>
+
+<!-- <script>
+ var sources = <%= @scrapings.map { |s| s.source }.to_json.html_safe %>;
+ console.log(sources);
+</script> -->
