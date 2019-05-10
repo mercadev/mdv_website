@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   end
 
   resources :scrapings, only: [:index]
-  resources :mailing_logs, only: [:index]
+  resources :mailing_logs, only: [:index, :create]
 
   post 'admin/contacts/send_prospect_emails', to: 'admin/contacts#send_prospect_emails', as: 'send_prospect_emails'
   get 'admin/contacts/send_prospect_emails', to: 'admin/contacts#send_prospect_emails', as: 'prospect_emails_sent'
