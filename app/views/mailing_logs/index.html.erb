@@ -11,18 +11,9 @@
 		<% @logs.each do |l| %>
 		<tr>
 			<th scope="row"><%= l.id %></th>
-			<td><%= l.first_name %></td>
-			<td><%= l.last_name %></td>
-			<td><%= l.company %></td>
-			<td><%= l.activity %></td>
-			<td><%= l.profession %></td>
-			<td><%= l.email %></td>
-			<td><%= l.mobile_phone %></td>
-			<td><%= l.fixed_phone %></td>
-			<td><%= l.address %></td>
-			<td><%= l.website %></td>
-			<td><%= l.source %></td>
-			<td><%= check_box_tag 'contact_ids[]', l.id, false, class: 'contact-checkbox' %></td>
+			<td><%= l.contact %></td>
+			<td><%= l.status %></td>
+			<td><%= l.messages_count%></td>
 		</tr>
 		<% end %>
 	</tbody>
