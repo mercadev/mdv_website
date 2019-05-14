@@ -2,7 +2,8 @@
 	<thead class="thead-dark">
 		<tr>
 			<th scope="col">Id</th>
-			<th scope="col">Contact</th>
+			<th scope="col">Entreprise</th>
+			<th scope="col">Email</th>
 			<th scope="col">Statut</th>
 			<th scope="col">Nombre de mails envoyés</th>
 		</tr>
@@ -11,7 +12,8 @@
 		<% @logs.each do |l| %>
 		<tr>
 			<th scope="row"><%= l.id %></th>
-			<td><%= l.contact %></td>
+			<td><%= l.contact.company %></td>
+			<td><%= l.contact.email %></td>
 			<td><%= l.status %></td>
 			<td><%= l.messages_count%></td>
 		</tr>

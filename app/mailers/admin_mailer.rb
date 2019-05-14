@@ -20,6 +20,6 @@ class AdminMailer < ApplicationMailer
     @contact = prospect
 
     # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire(s) et sujet.
-    mail(to: RECEIVERS, subject: 'Nouveau contact sur mercadev.fr')
+    mail(to: RECEIVERS, subject: 'Prospection: ' + @contact.company)
   end
 end

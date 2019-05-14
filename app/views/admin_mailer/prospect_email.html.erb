@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Required meta tags -->
@@ -216,9 +216,9 @@ box-shadow: none;
 <body>
 <div class="logo"> <img class="img_logo" src="https://www.mercadev.fr/mail_logo.png" alt="Logo_Mercadev"> </div>
 <div class="text-mail">
-<h2 id="welcome">Bonjour "Firstname" "Lastname",</h2>
+<h2 id="welcome">Bonjour <%= @contact.first_name %> <%= @contact.last_name %>,</h2>
 
-<h2 id="accroche-mail"> Envie d'atteindre plus de clients pour votre société "company" ?</h2>
+<h2 id="accroche-mail"> Envie d'atteindre plus de clients pour votre société <%= @contact.company %> ?</h2>
 
 <p>Internet n’est pas seulement un lieu de divertissement, c’est l’endroit où sont tous vos clients, ainsi que vos concurrents.</p>
 
